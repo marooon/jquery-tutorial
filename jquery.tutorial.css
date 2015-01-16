@@ -1,0 +1,1 @@
+.tutorial_overlay{ background-color: #000; opacity: .6; filter: alpha(opacity=60); z-index: 100; display: block; position: absolute; height: 100%; width: 100%; }
