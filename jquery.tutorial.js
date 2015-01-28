@@ -18,12 +18,19 @@
             opacity: 0.6,
             message: "#message",
             message_text: [
-                "ステップ１<br />aaaテスト1です。最初。",
-                "ステップ２<br />eeeeeeテスト2です。",
-                "ステップ３<br />テスト3です。",
-                "ステップ４<br />テスト4です。"
+                "step1<br />step1.",
+                "step2<br />step2.",
+                "step3<br />step3.",
+                "step4<br />step4."
             ],
             target: [".step1",".step2",".step3",".step4"],
+            dialog: ".tutorial_dialog",
+            dialog_positions: [
+                "left: 250px; top: 65px;",
+                "right: 120px; top: 65px;",
+                "left: 120px; bottom: 65px;",
+                "right: 120px; bottom: 65px;"
+            ],
             tutorial: "#tutorial",
             btn_open: "#btn-open",
             btn_next: "#btn-next",
@@ -54,6 +61,7 @@
                 $(options.tutorial).show();
                 $.tutorial.updateShape(options);
                 $.tutorial.updateStep(options);
+                $.tutorial.updateDialogPosition(options);
                 return;
             },
             next: function(options){
@@ -65,6 +73,7 @@
                 $(options.message).html(options.message_text[s]);
                 $.tutorial.updateShape(options);
                 $.tutorial.updateStep(options);
+                $.tutorial.updateDialogPosition(options);
                 return;
             },
             prev: function(options){
@@ -76,12 +85,14 @@
                 $(options.message).html(options.message_text[s]);
                 $.tutorial.updateShape(options);
                 $.tutorial.updateStep(options);
+                $.tutorial.updateDialogPosition(options);
                 return;
             },
             close: function(options){
                 s=0;
                 $(options.tutorial).hide();
                 $.tutorial.updateStep(options);
+                $.tutorial.updateDialogPosition(options);
                 return;
             }
         },
@@ -129,6 +140,11 @@
             var txt = page+" / "+options.target.length;
             $(pageArea).html(txt);
             return ;
+        },
+        updateDialogPosition: function(options){
+            var dialog = $(options.dialog);
+            dialog.attr("style", options.dialog_positions[s]);
+            return;
         }
     };
 })(jQuery);
