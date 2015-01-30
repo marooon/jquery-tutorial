@@ -27,9 +27,9 @@
             dialog: ".tutorial_dialog",
             dialog_positions: [
                 "left: 250px; top: 65px;",
-                "right: 120px; top: 65px;",
-                "left: 120px; bottom: 65px;",
-                "right: 120px; bottom: 65px;"
+                "left: 250px; top: 65px;",
+                "left: 250px; top: 65px;",
+                "left: 250px; top: 65px;"
             ],
             tutorial: "#tutorial",
             btn_open: "#btn-open",
