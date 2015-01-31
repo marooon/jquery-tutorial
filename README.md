@@ -6,7 +6,7 @@
 ## 使い方 ##
 
 まずはjquery.tutorial.jsをロードしてtutotialを呼び出します。
-
+```html
     <link rel="stylesheet" href="./jquery.tutorial.css" >
     <script src="./jquery.tutorial.js" ></script>
     <title>JQUERY TUTORIAL DEMO</title>
@@ -36,7 +36,7 @@
     		});
     	});
     </script>
-
+```
 
 そしてtargetに配列で指定されたclassをhtmlの要素に追加します。
 上記の場合はstep1〜step4です。
