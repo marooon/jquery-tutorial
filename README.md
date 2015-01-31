@@ -1,7 +1,7 @@
 # Jquery Tutorial
 ## 説明
 
-これはチュートリアルを実現するJquery Pluginです。  デモは[こちら](http://js.marooon.com/jquery/tutorial/demo.html "JQuery Tutorial")です。
+これはチュートリアルを実現するJquery Pluginです。  デモは[こちら](http://js.marooon.com/jquery/tutorial/example.html "JQuery Tutorial")です。
 
 ## 使い方 ##
 
